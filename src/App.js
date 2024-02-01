@@ -16,13 +16,17 @@ function App() {
 
 },[]);
   return (
+
     <div className="App">
       <h1>Star Wars App</h1>
+      <div className="body">
       {ships.map((ship)=>{
         return(
           <Ship ship={ship}/>
         )
       })}
+      </div>
+    
     </div>
   );
 }
